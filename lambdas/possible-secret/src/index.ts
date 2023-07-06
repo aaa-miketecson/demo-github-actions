@@ -21,7 +21,7 @@ export const handler = async (event) => {
 function getSecret() {
   return this.sm
     .getSecretValue({
-      SecretId: "some-secret-id",
+      SecretId: myAPMtoken,
     })
     .promise()
     .then((data) => data)
